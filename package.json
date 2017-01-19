@@ -1,0 +1,25 @@
+{
+  "name": "check-my-spots",
+  "version": "1.0.0",
+  "description": "Check, book and cancel spots on an event or place",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/javiBertos/checkMySpots.git"
+  },
+  "keywords": [
+    "js",
+    "backbone",
+    "typescript",
+    "sass"
+  ],
+  "author": "Javier Bertos <yo@javierbertos.name>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/javiBertos/checkMySpots/issues"
+  },
+  "homepage": "https://github.com/javiBertos/checkMySpots#readme"
+}
