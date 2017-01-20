@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Starting with Backbone and JS</title>
+  </head>
+
+  <body>
+
+    <header></header>
+    <section></section>
+    <footer></footer>
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/underscore/underscore-min.js"></script>
+    <script src="/node_modules/backbone/backbone-min.js"></script>
+    <script src="/node_modules/systemjs/dist/system.js"></script>
+    <script>
+      System.config({
+        packages: {
+          ".": {
+            format: "cjs",
+            defaultExtension: "js"
+          }
+        }
+      });
+      System.import( "./app/app" );
+    </script>
+  </body>
+</html>

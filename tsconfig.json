@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
-    "sourceMap": true,
+    "sourceMap": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": true,
     "noImplicitAny": false,
-    "rootDir": "./app-source",
+    "rootDir": "./app_src",
     "outDir": "./app"
   }
 }

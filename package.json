@@ -4,13 +4,14 @@
   "description": "Check, book and cancel spots on an event or place",
   "main": "index.html",
   "scripts": {
-    "start": "http-server -s && tsc -v && tsc && npm run build-css && concurrently \"npm run tsc:w\" \"npm run build-css:w\"",
+    "start": "tsc -v && tsc && npm run build-css && concurrently \"npm run tsc:w\" \"npm run build-css:w\"",
     "postinstall": "typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings",
     "build-css": "node-sass scss --include-path Scss --recursive --output css",
-    "build-css:w": "nodemon -e scss -x \"npm run build-css\""
+    "build-css:w": "nodemon -e scss -x \"npm run build-css\"",
+    "build-assets": "tsc && npm run build-css"
   },
   "repository": {
     "type": "git",
@@ -35,8 +36,10 @@
     "underscore": "^1.8.3"
   },
   "devDependencies": {
-    "http-server": "^0.9.0",
     "concurrently": "^3.1.0",
+    "http-server": "^0.9.0",
+    "node-sass": "^4.3.0",
+    "nodemon": "^1.11.0",
     "typescript": "^2.1.5",
     "typings": "^2.1.0"
   }
