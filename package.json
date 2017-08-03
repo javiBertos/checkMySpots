@@ -4,8 +4,9 @@
   "description": "Check, book and cancel spots on an event or place",
   "main": "index.html",
   "scripts": {
-    "start": "tsc -v && tsc && npm run build-css && concurrently \"npm run tsc:w\" \"npm run build-css:w\"",
-    "postinstall": "typings install",
+    "prestart": "npm install",
+    "start": "http-server",
+    "start-dev": "typings install && tsc -v && tsc && npm run build-css && concurrently \"npm run tsc:w\" \"npm run build-css:w\" && http-server -s",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings",
@@ -31,13 +32,13 @@
   "homepage": "https://github.com/javiBertos/checkMySpots#readme",
   "dependencies": {
     "backbone": "^1.3.3",
+    "http-server": "^0.9.0",
     "jquery": "^3.1.1",
     "systemjs": "^0.19.42",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
     "concurrently": "^3.1.0",
-    "http-server": "^0.9.0",
     "node-sass": "^4.3.0",
     "nodemon": "^1.11.0",
     "typescript": "^2.1.5",
